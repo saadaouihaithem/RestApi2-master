@@ -13,6 +13,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.ArrayList;
 
 @SpringBootApplication
+
+
+
 public class RestApiApplication {
 
 	public static void main(String[] args) {
@@ -25,7 +28,6 @@ public class RestApiApplication {
 	PasswordEncoder passwordEncoder(){
 		return new BCryptPasswordEncoder();
 	}
-
 
 
 
@@ -52,4 +54,8 @@ public class RestApiApplication {
 			userService.addRoleToUser("saadaoui","ROLE_ADMIN");
 		};
 	}
+
+
+
+
 }
